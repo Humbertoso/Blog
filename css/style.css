@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #eee;
+	font-family: calibri;
+	font-size: 20px;
+}
+
+/*.faixa{/*faixa abaixo do menu*
+	padding: 0.5%;
+	background: #222;
+}*/
+
+/*área do menu*/
+
+
+.menu {
+
+	width: 100%;
+	height: 50px;
+	background-color: #333;
+	font-family: futura bk bt, trebuchet ms, sans-serif; 
+	font-size: 17px;
+	margin-bottom: 10px;
+
+}
+
+.menu ul{
+	list-style: none;
+	position: relative;
+}
+
+
+.menu ul li {
+	width: 150px;
+	float: left;
+}
+
+.menu a {
+	padding: 10%;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+}
+
+.menu ul ul {
+	position: absolute;
+	visibility: hidden;
+	margin-left: auto;
+}
+
+.menu ul li:hover ul {
+	visibility: visible;
+
+
+}
+
+.menu a:hover {
+	background-color: #FC4A00;
+	transition: 0.2s ease-in-out;
+
+}
+
+
+.menu ul ul li {
+	float: none;
+
+}
+
+@media(max-width: 500px){
+	.menu ul li {
+		width: 100%;
+	}
+	.menu a {
+		padding: 5%;
+	}
+}
+
+/*área do rodapé*/
+
+footer {
+	clear: both;
+	width: 100%; 
+	min-height: 60px;
+	max-height: 100px;
+	border-top: 1px solid #FC4A00;
+	background-color: #333;
+	margin-top: 10px;
+}
+
+
+footer p {
+	margin-top: 8px;
+	text-align: center;
+	font-family: calibri, trebuchet ms, sans-serif;
+	font-size: 18px;
+	padding: 17px;
+	color: #fff;
+}
+
+
+/*área do nome do site*/
+
+
+.site-inicio {
+	background: #333;
+	border-radius: 3px;
+	margin: 0 auto;
+	padding: 20px;
+	min-width: 320px;
+	max-width: 800px;
+}
+
+@media(max-width: 500px) {
+	.site-inicio {
+		visibility: hidden;
+	}	
+
+}
+
+i {
+	color: white;
+	font-family: calibri;
+}
+
+
+/*area do article*/
+article {
+
+	background-color: #fff;
+	min-width: 320px;
+	max-width: 800px;
+	max-height: auto;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 5%;
+	border-radius: 5px;
+	box-shadow: 0 1px 10px #555;
+}
+
+@media(max-width: 500px){
+	article{
+		margin: 10px;
+	}
+}
+
+
+article p{
+	margin-top: 20px;
+}
+
+p a {
+	text-decoration: none;
+	color: #069;
+}
+
+p a:hover {
+	color: #FC4A00;
+	transition: 0.2s ease-in-out;
+}
+
+
+
+/*area da galeria*/
+
+	section.galeria { 
+		background-color: #333;
+		padding: .5vw;
+		font-size: 0;
+		flex-flow: row wrap; 
+		display: flex;
+		margin-top: 10px;
+	}
+	section.galeria div { 
+		flex: auto; 
+		width: 200px; 
+		margin: .5vw; 
+	}
+	section.galeria div img { 
+		width: 100%; 
+		height: auto; 
+	}
+
+	@media screen and (max-width: 400px) {
+		header div { margin: 0; }
+		header { padding: 0; }
+	}
+
+
+.sobre {
+	min-width: 320px;
+	float: left;
+	margin: 2% 3% 0 0;
+	width: 20%;
+}
